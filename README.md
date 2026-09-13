@@ -1,6 +1,5 @@
 # AI-Powered Customer Complaint Management System
 
-## AIVOA Round 1 – AI Product Engineer (Interns)
 
 An AI-powered Customer Complaint Management System designed for pharmaceutical manufacturing organizations.
 
@@ -124,3 +123,93 @@ Example:
 Severity: Major
 Priority: High
 Risk Level: High
+```
+## 5. AI Complaint Summary
+
+The AI generates a short professional summary of the complaint.
+
+The summary considers:
+
+Customer
+Product
+Batch
+Quantity
+Complaint type
+Complaint description
+Risk assessment
+
+This allows quality personnel to quickly understand the complaint.
+```
+```
+## Technology Stack
+Frontend
+React
+Redux Toolkit
+React Redux
+Axios
+Vite
+CSS
+Google Inter Font
+Backend
+Python
+FastAPI
+SQLAlchemy
+Pydantic
+Uvicorn
+AI
+Groq API
+LangGraph
+Large Language Model
+Current Groq Model
+openai/gpt-oss-20b
+
+The model is configured through an environment variable so that it can be changed without modifying the application source code.
+
+Database
+PostgreSQL
+Supabase
+Document Processing
+pypdf
+python-docx
+Python email library
+## Database
+
+The project uses PostgreSQL hosted through Supabase.
+
+Main table:
+
+complaints
+
+The table stores complaint information and QMS status.
+```
+```
+## End-to-End Workflow
+Customer Complaint
+       ↓
+Upload Document / Paste Text
+       ↓
+AI Complaint Copilot
+       ↓
+Document Text Extraction
+       ↓
+LangGraph Workflow
+       ↓
+Information Extraction
+       ↓
+Risk Assessment
+       ↓
+AI Summary
+       ↓
+Redux State Update
+       ↓
+Complaint Form Automatically Populated
+       ↓
+Human Review
+       ↓
+Create Complaint
+       ↓
+PostgreSQL Database
+       ↓
+Commit to QMS Ledger
+       ↓
+COMMITTED
