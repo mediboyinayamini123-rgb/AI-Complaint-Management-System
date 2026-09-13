@@ -185,46 +185,32 @@ The table stores complaint information and QMS status.
 ```
 ## End-to-End Workflow
 Customer Complaint
-
        ↓
 Upload Document / Paste Text
-
        ↓
 AI Complaint Copilot
-
        ↓
 Document Text Extraction
-
        ↓
 LangGraph Workflow
-
        ↓
 Information Extraction
-
        ↓
 Risk Assessment
-
        ↓
 AI Summary
-
        ↓
 Redux State Update
-
        ↓
 Complaint Form Automatically Populated
-
        ↓
 Human Review
-
        ↓
 Create Complaint
-
        ↓
 PostgreSQL Database
-
        ↓
 Commit to QMS Ledger
-
        ↓
 COMMITTED
 
